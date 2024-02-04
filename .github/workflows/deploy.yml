@@ -20,14 +20,17 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./out
+    env:
+      BASEPATH: ${{ vars.BASEPATH }}
+      METADATABASE: ${{ vars.METADATABASE }}
 
   deploy:
     needs: build
 
     permissions:
-      pages: write # to deploy to Pages
-      id-token: write # to verify the deployment originates from an appropriate source
+      pages: write
+      id-token: write
 
     environment:
       name: github-pages
@@ -38,4 +41,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
+        uses: actions/deploy-pages@v4

@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Set up Github Page
 
-Currently, two official plugins are available:
+Go to `Settings` > `Secrets and variables` > `Actions` > `Variables` > `New repository variable`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. `BASEPATH` e.g. `/website` or left blank
 
-## Expanding the ESLint configuration
+## Contributions
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Adding a new blog post
 
-- Configure the top-level `parserOptions` property like this:
+1. Fork the repository
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+2. Create a new folder in the `blogs` directory with the format `YYYY-MM-DD-title`.
+
+3. Create a `readme.md` file inside the new folder with the following format:
+
+```markdown
+---
+date: YYYY-MM-DD
+title: Title
+description: Description
+author: Author
+tags: [tag1, tag2]
+---
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+4. If you want to add images to the blog post, add them to the new folder and reference them in the `readme.md` file.
+
+5. Commit and push your changes.
+
+6. Create a pull request
