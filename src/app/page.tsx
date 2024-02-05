@@ -3,9 +3,17 @@ import { readdirSync } from "fs";
 import { BlogMetadata } from "@/utils/blog";
 import { readFrontmatter } from "@/utils/markdown";
 import Link from "next/link";
+import { Icon } from "@/components/Icons";
 
 export default async function BlogPage() {
   let files = readdirSync("./blogs", { withFileTypes: true });
+
+  files = files.filter(
+    (file) =>
+      !file.name.startsWith(".") &&
+      file.name !== "DS_Store" &&
+      file.name !== "template"
+  );
 
   files.sort((a, b) => {
     return b.name.localeCompare(a.name);
@@ -23,14 +31,17 @@ export default async function BlogPage() {
   }
 
   return (
-    <div className="bg-neutral-900 py-24 sm:py-32">
+    <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 min-h-[100vh]">
         <div className="mx-auto max-w-2xl">
+          <h1 className="mb-24 rounded-full">
+            <Icon className="h-48 w-auto mx-auto text-white hover:text-blue-500 hover:bg-white p-5 rounded-full hover:fill-blue-50" />
+          </h1>
           <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
             Pysr.xyz Blog
           </h2>
           <p className="mt-2 text-lg leading-8 text-gray-200">
-            Just my thought
+            Frontend to my Obsidian vault.
           </p>
           <div className="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
             {blogs.map((blog) => (

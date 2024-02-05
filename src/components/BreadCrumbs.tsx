@@ -24,7 +24,7 @@ export default function Breadcrumbs({
             </Link>
           </div>
         </li>
-        <li>
+        {/* <li>
           <div className="flex items-center">
             <ChevronRightIcon
               className="h-5 w-5 flex-shrink-0 text-gray-100"
@@ -37,7 +37,7 @@ export default function Breadcrumbs({
               Blog
             </Link>
           </div>
-        </li>
+        </li> */}
         <li>
           <div className="flex items-center">
             <ChevronRightIcon
