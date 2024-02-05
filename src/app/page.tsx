@@ -3,7 +3,6 @@ import { readdirSync } from "fs";
 import { BlogMetadata } from "@/utils/blog";
 import { readFrontmatter } from "@/utils/markdown";
 import Link from "next/link";
-import { Icon } from "@/components/Icons";
 
 export default async function BlogPage() {
   let files = readdirSync("./blogs", { withFileTypes: true });
@@ -12,7 +11,8 @@ export default async function BlogPage() {
     (file) =>
       !file.name.startsWith(".") &&
       file.name !== "DS_Store" &&
-      file.name !== "template"
+      file.name !== "template" &&
+      !file.name.includes("[wip]")
   );
 
   files.sort((a, b) => {
