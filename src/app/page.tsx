@@ -34,9 +34,6 @@ export default async function BlogPage() {
     <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 min-h-[100vh]">
         <div className="mx-auto max-w-2xl">
-          <h1 className="mb-24 rounded-full">
-            <Icon className="h-48 w-auto mx-auto text-white hover:text-blue-500 hover:bg-white p-5 rounded-full hover:fill-blue-50" />
-          </h1>
           <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
             Pysr.xyz Blog
           </h2>
