@@ -7,7 +7,7 @@ tags:
   - tokenomics
 author: Pysr
 ---
-![Thumbnail][./thumbnail.jpg]
+![Thumbnail](./thumbnail.jpg)
 
 # April Fool's Tokenomics
 
