@@ -7,7 +7,8 @@ tags:
   - tokenomics
 author: Pysr
 ---
-![[thumbnail.jpg]]
+![Thumbnail][./thumbnail.jpg]
+
 # April Fool's Tokenomics
 
 ## Key findings and insights
@@ -21,11 +22,14 @@ author: Pysr
 
 ## Temporal Distribution of Minting Activity
 
-![[minting.png]]
+![Temporal Distribution 5 minutes bin](minting.png)
+
 The data shows that minting activity started relatively modestly, with fewer tokens being minted in the initial hours. As time progressed, there was a marked increase in both the frequency and volume of minting transactions. This suggests a growing awareness or interest in the minting event, potentially influenced by social network effects or word-of-mouth dissemination. The peak is at more than 10,000 mint within 5 minutes interval. 
 
 ## Slicing the Birthday Cake: Celebration of 'Proof of Finger'
-![[lorenz.png]]
+
+![Lorenz Curve After Mint ended](lorenz.png)
+
 The Lorenz curve for Shitzu's token distribution post-minting paints a vivid picture of reward through engagement. Embracing the playful 'Proof of Finger' meme, the curve reflects a community-driven ethos where the most dedicated participants—the fervent clickers—are rewarded. The swift uptick at the curve's end signifies that those who believed in Shitzu's vision and acted upon it by frequently engaging with the minting process have amassed a greater share of the tokens.
 
 This distribution model champions activity and commitment, aligning with the optimistic spirit of Shitzu's April Fool's launch. The Gini coefficient, standing at 0.7245, is not just a number—it's a testament to the enthusiasm of the community. It highlights a system where effort equates to earning, and the zeal to click that mint button more than others has shaped the new tokenomics landscape. Far from the solemnity of traditional financial systems, Shitzu's token distribution is a celebration of participation, reward, and the joyous 'Proof of Finger' principle.
