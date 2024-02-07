@@ -12,7 +12,7 @@ export default async function BlogPage() {
       !file.name.startsWith(".") &&
       file.name !== "DS_Store" &&
       file.name !== "template" &&
-      !file.name.includes("[wip]")
+      !file.name.startsWith("wip")
   );
 
   files.sort((a, b) => {
